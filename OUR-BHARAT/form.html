@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUR BHARAT</title>
+    <style>
+        body {
+            background-image: url("loginindia.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+
+        .form {
+            background-color: rgba(255, 255, 255, 0.183);
+            width: 80%;
+            max-width: 300px;
+            padding: 20px;
+            border-radius: 30px;
+            
+            color: rgb(226, 204, 124);
+        }
+
+        h2 {
+            color: rgb(226, 204, 124);
+            text-align: center;
+        }
+
+        h2:hover {
+            text-shadow: 0 0 25px rgb(6, 6, 6), 0 0 50px rgb(0, 153, 255);
+            transform: scale(1.1);
+        }
+
+        input {
+            background-color: rgba(0, 0, 0, 0.26);
+            color: #ffffff;
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid gray;
+            border-radius: 50px;
+            
+            
+        }
+
+        .gender {
+            
+            text-shadow: 0 0 25px rgb(10, 14, 72), 0 0 50px rgb(10, 14, 72);
+            
+        }
+
+        .harsh {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        button {
+            background-color: rgb(77, 77, 182);
+            color: #fff;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: rgb(10, 14, 72);
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 480px) {
+            .form {
+                width: 90%;
+                padding: 15px;
+            }
+
+            input, button {
+                font-size: 14px;
+            }
+
+            .harsh {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .icon{
+            display: flex;
+        }
+        .ob{
+            height: 25px;
+            padding-top: 15px;
+            padding-right: 10px;
+        }
+        .ob:hover{
+            shadow: 0 0 25px rgb(255, 255, 255), 0 0 50px rgb(255, 255, 255);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h2><b>Login</b></h2>
+        <form action="index.html" method="POST">
+            
+            <div class="icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfZJREFUaEPtmGtSBCEMhNmTqSdTT6aeTG1rY0WE0Hmw61jLH2cdHv0lIRM4tYO308H1txvAtT24wwP3rbXHMxie0V5ba2/n56dK6EoAES6iLZ3Pny9LQKoAIEaszhq4BKICICJeINMQWYCZeMQ8xOEvGsJK7w3tpQfVj/Xed78swPtgRUvQCBiQGBNqGYCRGCYk4ImXTm3YC5UAjHjRDQCdrcJeyAD0IjxW7L1wFYA+/r3GyI7/8qZ3UR26WQHZ8WmAw4dQZiP2GcyTAH4ksEwIRdNhNP0OvxMZAEzYewH/s6w5gk7txSzATJCUEbqUQLE3qlTD4ZMiV/48dDEnHBGIlOVl4WwI6Y3FQvSVaqiI2wGgvYHnOxXzshd0iZ0SvhOgRBg7SWUIsWuW9ssCyEkL4YLGHOjRT0IKNxV4lt9uuCiA5waCFRXKSl6AHcI1oBvCAzD76rIW9vSjD0csgCVe8rqO7ZVY2TvoN7tPoiBYgNHtQ+UHafYRXEIwAKXlr+Ga0JXLCuBS4q2ayvTCCqAPHXeWWG2GwXvXSc8CGG3cFXBA768hrpOeJajs3Bqg6r0w9bwFQE8SELgaQl98eQCWKW2lyvG+BKDk4skhuu9KrW95gJogIXA1lFr/XwOsLPQn3l8ir28FvQFsNS8x+c0DhJG2dvkAtFd1MRmVMkUAAAAASUVORK5CYII=" class="ob"/>
+                <input type="text" name="name" placeholder="Name" required>
+            </div>
+            <div class="icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAf5JREFUaEPtmAtOAzEMRNOTAScDTgacDDoSRsF17HE+m67USFWraj/zYnu83ks5+bqcXH95AOyOYE8Enkspr6UUfL9fAd52QmQBIBbi67UVIgNgiReQbRAsgCd+KwQDwIjfBhEBtMQjZbB0PeC/Q9PJA4DLfBgOUwv0AA9xJw+AdZytEB7Ad8IuWxAv137xubJPZAB66gXiAbFsrQaA8Ah8CM67OAoYhSzLS4dtdTADYJv4KLxaWMvfdbEf2gsyfaBVkBm3Gsp36+SowLQ463hdK8udpwaJAJhC1h37rgHYNFrewCQKUQSs56G7SqMIAKA6jSw3skAPeSplANgosA9/2kyGZmwGgI2CdVzUE3qh/zaBBbCiYBVqa4awQKbM2CyAtbstR4pGUG+aq9OLqqEMQKZQvUhkunEIkQHAjbM5G0VDYLpn7CxAT6G2wGvxMj+nn2x7AJhhv5UmIlTeZlhGkILoAYC4EQimBugZuxfASwu4E3J6dJi3IG6cbwTAi0TUwEai8E/zKIBAyOt2S1hohcZJdB3MAJD7R5YpVhm9saPF48YzASK7rDcaufz1+wd+S72kxK8AYKPB1IDVJ27Omx0BfQPs6JN6vzRN/MoIaJHoG/hkYKjiXx2BqCMDSJxMjk31kV0AmTRyj30ATNvKzgs9ItC5cdNOO30EfgDf2Y4xWNzFsQAAAABJRU5ErkJggg==" class="ob"/>
+                <input type="tel" name="number" placeholder="Number"  required>
+            </div>
+            <div class="icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAX1JREFUaEPtWEsSwiAMpTfTk6kn05upzxGH0gCBhEKdsGHREvI+JLSLO/hYDp6/MwCjFTQFTAEhA2YhIYHi5X+rwMk5d3HOYca4feermDJeAGp/cm9KASy+J/YBkN4gEB/kUeP8JvURPqAA5AJ4NXqBKO2N5AHiNygAT57Kn0ArNpjrqNdiy6RCqQLQUqPEegxmRbpEAR9Yci5qk8ee6gA8kBpLcS1DWakbAK6lWlhPnlsNC8Us5SyF8ux7S+uZ76pAmFRoKYlluh/iHJO+g6caU4sKuynQkhxnjQHgsNTzHRUF0NKl1SQGyY2pAgBBpPU8BOBLL+cepgYACWiACPvG7gAAorXGwzJIPrzRDgHgrVCjRqpbDwXAtVTuqjEcQM5SlGXiSjQFAMpS3G+GqQB4S4VzqcFNB6CU8NQWqk0e75sCTSy0UJ1YYwqAGM53a6+fwiUFNuU4lUjpWjACwOavHNjulYjisciHMgC7UZ3YyBQwBYQMmIWEBIqXvwD1AFsxY7xxXwAAAABJRU5ErkJggg==" class="ob"/> 
+                <input type="email" name="email" placeholder="Email" required>
+            
+            </div>
+            <hr>
+            <div class="gender">
+                <label>Gender:</label><br><br>
+                <div class="harsh">
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                </div>
+                <hr>
+            </div>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
